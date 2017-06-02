@@ -65,7 +65,7 @@ module.exports =
     previousActivePane = atom.workspace.getActivePane()
     uri = "rspec-output://#{file}"
     window_split = atom.config.get("rspec.window_split")
-    atom.workspace.open(uri, split: window_split, activatePane: false, searchAllPanes: true).done (rspecView) ->
+    atom.workspace.open(uri, split: window_split, activatePane: false, searchAllPanes: true).then (rspecView) ->
       if rspecView instanceof RSpecView
         rspecView.run(lineNumber)
         previousActivePane.activate()
