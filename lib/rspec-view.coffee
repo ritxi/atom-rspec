@@ -16,7 +16,7 @@ class RSpecView extends ScrollView
 
   initialize: ->
     super
-    @on 'core:copy': => @copySelectedText()
+    atom.commands.add 'atom-text-editor', 'core:copy': -> @copySelectedText
 
   constructor: (filePath) ->
     super
@@ -25,7 +25,7 @@ class RSpecView extends ScrollView
 
     @output  = @find(".rspec-output")
     @spinner = @find(".rspec-spinner")
-    @output.on("click", @terminalClicked)
+    atom.commands.add ".rspec-output", 'click': -> @terminalClicked
 
   serialize: ->
     deserializer: 'RSpecView'
