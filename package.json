@@ -1,9 +1,9 @@
 {
-  "name": "rspec",
+  "name": "ritxi-rspec",
   "main": "./lib/rspec",
   "version": "0.3.3",
   "private": true,
-  "description": "Atom RSpec runner package",
+  "description": "Fork of Atom RSpec runner package with window position config and deprecation warning fixed",
   "activationCommands": {
     "atom-workspace": [
       "rspec:run",
@@ -12,7 +12,7 @@
       "rspec:run-all"
     ]
   },
-  "repository": "https://github.com/fcoury/atom-rspec",
+  "repository": "https://github.com/ritxi/atom-rspec",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
