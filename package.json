@@ -1,7 +1,7 @@
 {
   "name": "ritxi-rspec",
   "main": "./lib/rspec",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "description": "Fork of Atom RSpec runner package with window position config and deprecation warning fixed",
   "activationCommands": {
